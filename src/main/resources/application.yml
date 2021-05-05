@@ -1,0 +1,30 @@
+cache:
+  jcache:
+    config: classpath:ehcache.xml
+server:
+  port: 8233
+  max-http-header-size: 10240
+
+file_path:
+  loginfilepath: D:\\bilidownfile\\loginfile\\login.data
+  downloadpath: D:\\bilidownfile\\download
+  qrfilepath: D:\\bilidownfile\\loginfile\\qrcode.jpg
+
+biliurl:
+  loginUrl: http://passport.bilibili.com/qrcode/getLoginUrl
+  qrcodeUrl: https://passport.bilibili.com/qrcode/h5/login?oauthKey=
+  loginInfo: http://passport.bilibili.com/qrcode/getLoginInfo
+  #验证用户是否登录
+  verifyUrl: http://api.bilibili.com/nav
+  #得到某bvid的所有分p信息
+  videoInfo: http://api.bilibili.com/x/web-interface/view?bvid=
+  #得到bvid下某分p的具体下载url
+  videoDownloadInfo: http://api.bilibili.com/x/player/playurl?
+
+# nohup java -jar bilidown-1.0.jar --spring.profiles.active=pro
+
+#167368258,167368270,167368892,167368300,167368897,167368701,167368904,167368704,167368907,167368966,167368920,167369503,167368935,167369016,167368975,167369036
+  #167368258,167368270,167368892,167368300,167368897,167368701,167368904,167368704,167368907,167368966
+  #11389924
+  # 任务超出队列长度怎么办
+  # 通信 实现进度通知     sudo mount -t nfs 192.168.1.101:/volume2/yueBaidu/bilidownfile/download /home/sajia23/store/bilidown -o proto=tcp -o nolock

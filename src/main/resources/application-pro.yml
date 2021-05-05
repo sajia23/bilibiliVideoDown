@@ -1,0 +1,15 @@
+server:
+  port: 8233
+  max-http-header-size: 10240
+
+file_path:
+  #loginfilepath: D:\\bilidownfile\\loginfile\\login.data
+  loginfilepath: /home/sajia23/store/bilidown/loginFile/login.data
+  #downloadpath: D:\\bilidownfile\\download
+  downloadpath: /home/sajia23/store/bilidown/downloads/
+  #qrfilepath: D:\\bilidownfile\\loginfile\\qrcode.jpg
+  qrfilepath: /home/sajia23/store/bilidown/loginFile/qrcode.jpg
+
+  googlesecret: /home/sajia23/store/bilidown/loginFile/googlesecret
+
+
